@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="rootPane" prefHeight="507.0" prefWidth="720.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="buyAndSell.ui.found.FoundController">
+    <stylesheets>
+        <URL value="@found.css" />
+    </stylesheets>
+   <children>
+      <TableView fx:id="tableView" layoutX="10.0" layoutY="10.0" prefHeight="460.0" prefWidth="720.0" AnchorPane.bottomAnchor="47.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <columns>
+            <TableColumn fx:id="itemNameCol" prefWidth="213.0" text="Item Name" />
+            <TableColumn fx:id="itemIdCol" prefWidth="161.0" text="Item ID" />
+            <TableColumn fx:id="sellerIdCol" prefWidth="154.0" text="Seller ID" />
+            <TableColumn fx:id="priceCol" prefWidth="104.0" text="Price" />
+            <TableColumn fx:id="availabilityCol" prefWidth="87.0" text="Availability" />
+         </columns>
+      </TableView>
+      <JFXButton fx:id="close" layoutX="18.0" layoutY="466.0" onAction="#close" prefHeight="27.0" prefWidth="684.0" text="Close" />
+   </children>
+</AnchorPane>

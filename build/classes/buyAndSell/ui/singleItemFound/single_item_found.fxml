@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" fx:id="rootPane" prefHeight="662.0" prefWidth="787.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="buyAndSell.ui.singleItemFound.SingleItemFoundController">
+    <stylesheets>
+        <URL value="@single_item_found.css" />
+    </stylesheets>
+   <children>
+      <HBox layoutX="91.0" layoutY="218.0" prefHeight="355.0" prefWidth="627.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="445.0" prefWidth="338.0">
+               <children>
+                  <Label text="Item Name">
+                     <VBox.margin>
+                        <Insets bottom="20.0" top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label text="Item ID">
+                     <VBox.margin>
+                        <Insets bottom="20.0" top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label text="Item Price">
+                     <VBox.margin>
+                        <Insets bottom="20.0" top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label text="Seller ID">
+                     <VBox.margin>
+                        <Insets bottom="20.0" top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label text="Availability">
+                     <VBox.margin>
+                        <Insets bottom="20.0" top="20.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="445.0" prefWidth="338.0">
+               <children>
+                  <Label fx:id="itemName">
+                     <VBox.margin>
+                        <Insets bottom="20.0" top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="itemID">
+                     <VBox.margin>
+                        <Insets bottom="20.0" top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="itemPrice">
+                     <VBox.margin>
+                        <Insets bottom="20.0" top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="sellerId">
+                     <VBox.margin>
+                        <Insets bottom="20.0" top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="isAvail">
+                     <VBox.margin>
+                        <Insets bottom="20.0" top="20.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <ImageView fx:id="image" fitHeight="187.0" fitWidth="251.0" layoutX="268.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+      <JFXButton fx:id="close" layoutX="144.0" layoutY="573.0" onAction="#close" prefHeight="60.0" prefWidth="533.0" text="Close" />
+   </children>
+</AnchorPane>
